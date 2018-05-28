@@ -83,7 +83,7 @@ def client():
                     sys.stdout.write('[Me] ')
                     sys.stdout.flush()
                 else:
-                    if oponentBoard.validCoor(msg):
+                    if oponentBoard.validCoor(msg.rstrip()):
                         if localBoard.yourTurn:
                             s.send(msg.encode("utf-8"))
                             lastGuessStack.append(msg)  # w celu ustalenia kolejnosci
