@@ -11,4 +11,4 @@
 * A client connects to server via a specified port and a host name. Default values are `9009` for port and localhost address `127.0.0.1` for host.
 * When the client has successfully connected to the server, a proper message is displayed and the game has started.
 * First player to send a proper coordinates message starts the game. Coordinates should consist of a letter for a vertical axis and a number for horizontal axis, range **A - J** and **1 - 10**. The order (_letter, number_) should be of no significance.
-* To check our board, type `player` into terminal. To check our current knowledge about the opponent board, type `opponent` and press enter.
+* To check player board, type `player` into terminal. To check our current knowledge about the opponent board, type `opponent` and press enter.
