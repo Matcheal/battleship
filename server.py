@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import sys
 import socket
 import select
@@ -24,7 +25,7 @@ def server():
 
         oponentBoard = battleshipBoard.Board()                                                  #inicjalizacja planszy przeciwnika
         localBoard = battleshipBoard.Board()                                                    #inicjalizacja planszy gracza
-        localBoard.initShips("short")                                                           #wpisanie położenia statków gracza
+        localBoard.initShips("ready")                                                           #wpisanie położenia statków gracza
         lastGuessStack = list()                                                                 #stos przechowujący ostatnie zgadywane położenie
         client_socket.send(("Opponent ready!\n").encode("utf-8"))                               #wyślij wiadomość gotowości do przeciwnika
 

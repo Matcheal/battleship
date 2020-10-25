@@ -198,7 +198,7 @@ class Board:
 
     def initShips(self, command = None):                                        #initiates loading ships sequence
         print("Initiate the position of your ships, in the following order:\n1x 4 square ship, 2x 3 square ship, 3x 2 square ship, 4x 1 square ship.",
-              "Enter the starting and ending coordinates of the ship, like in the following example: A1 A4 for 4 square ship. ")
+              "Enter the starting and ending coordinates of the ship, like in the following example: A1 A4 for 4 square ship.\nType \"player\" to view your board or \"opponent\" to view your current knowledge  opponent's board")
         shipList = [4, 3, 3, 2, 2, 2, 1, 1, 1, 1]
         if command == "ready":
             coorList = ["A1 A4", "C1 C3", "H10 J10", "A6 A7", "E2 F2", "G5 G6", "A10", "J1", "J5", "I3"]

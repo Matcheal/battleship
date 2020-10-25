@@ -1,8 +1,8 @@
+#!/usr/bin/env python3
 import sys
 import socket
 import select
 import battleshipBoard
-
 
 def client():
     host = sys.argv[2] if len(sys.argv) > 2 else '127.0.0.1'
@@ -19,7 +19,7 @@ def client():
 
     oponentBoard = battleshipBoard.Board()
     localBoard = battleshipBoard.Board()
-    localBoard.initShips("short")
+    localBoard.initShips("ready")
     lastGuessStack = list()
     s.send(("Opponent ready!\n").encode("utf-8"))
     print("Wait for your opponent to initiate their's ships.")
